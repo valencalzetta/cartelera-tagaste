@@ -1,0 +1,23 @@
+footer {
+    background-color: $color-azul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: $spacing;
+    a {
+        color: $color-blanco-claro;
+        font-size: .8rem;
+        text-decoration: none;
+        img {
+            width: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    footer {
+        a {
+            font-size: 1rem;
+        }
+    }
+}

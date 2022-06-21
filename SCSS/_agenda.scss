@@ -1,0 +1,63 @@
+.section-agenda {
+    background-color: $color-azul;
+    color: $color-blanco-claro;
+    margin-bottom: $spacing*10;
+    padding: $spacing;
+    margin-top: $spacing*4;
+    h4 {
+        text-align: center;
+        margin-bottom: $spacing;
+    }
+    .actividad {
+        margin-top: $spacing*2;
+        .descripcion-actividad {
+            h5 {
+                font-weight: 300;
+                font-size: 1rem;
+            }
+        }
+        .foto-info-actividad {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            div {
+              display: flex;
+              flex-direction: column;
+            }
+            .foto-actividad {
+                padding-right: $spacing;
+            }
+            .info-actividad {
+                align-content: space-around;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: $spacing;
+                    img {
+                        height: 30px;
+                        margin-right: $spacing;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width:426px) {
+    .section-agenda  {
+        padding: $spacing*4;
+        h4 {
+            font-size: 1.6rem;
+        }
+        .actividad {
+            margin-top: $spacing*5;
+            padding-left: $spacing*5;
+            .descripcion-actividad {
+                h5 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

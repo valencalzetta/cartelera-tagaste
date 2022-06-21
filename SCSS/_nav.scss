@@ -1,0 +1,33 @@
+nav {
+    background-color: $color-blanco-oscuro;
+    .container-fluid {
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img {
+                width: 40px;
+            }
+            p {
+                font-size: 1.4rem;
+                color: $color-azul;
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:769px) {
+    nav {
+        #navbarNav {
+            justify-content: end;
+            padding-right: $spacing*2;
+            a {
+                &:hover {
+                    color: $color-azul;
+                }
+            }
+        } 
+    } 
+}

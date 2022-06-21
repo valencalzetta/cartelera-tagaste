@@ -1,0 +1,61 @@
+.section-caracteristicas {
+    margin-top: $spacing*4;
+    h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        color: $color-azul;
+        margin-bottom: $spacing;
+    }
+    .caracteristicas {
+        display: flex;
+        flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: $spacing;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 80px;
+                    animation-name: animacion-1;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    animation-duration: 5s;
+                }
+                p {
+                    color: $color-azul;
+                }
+            }  
+    
+        }
+    }
+}
+
+
+@media screen and (min-width: 425px) {
+    .section-caracteristicas {
+        h4 {
+            margin-bottom: $spacing*3;
+            font-size: 1.5rem;
+        }
+        .caracteristicas {
+            flex-direction: row;
+            justify-content: space-around;
+            div {
+                display: block;
+                div {
+                    img {
+                        width: 90px;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }  
+    }
+}

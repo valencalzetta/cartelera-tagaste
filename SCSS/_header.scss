@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $spacing*6;
+    color: $color-azul;
+    .titulo {
+        h1 {
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        flex-direction: row;
+        justify-items: center;
+        justify-content: space-evenly;
+        margin-bottom: $spacing*5;
+        .titulo {
+            padding: $spacing*5;
+            background-color: $color-blanco-claro;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            max-width: 40vw;
+        }
+    }
+}

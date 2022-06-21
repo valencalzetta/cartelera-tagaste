@@ -1,0 +1,13 @@
+.carousel{
+    margin-top: $spacing*5;
+    margin-bottom: $spacing*5;
+    div {
+        div {
+            img {
+                height: 400px;
+                width: auto!important;
+                align-self: center;
+            }
+        }
+    }
+}
