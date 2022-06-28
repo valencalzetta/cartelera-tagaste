@@ -3,11 +3,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: $spacing;
+    padding: $spacing*2;
     a {
         color: $color-blanco-claro;
         font-size: .8rem;
         text-decoration: none;
+        &:hover {
+            color: white;
+        }
         img {
             width: 30px;
         }

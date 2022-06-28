@@ -9,11 +9,19 @@
         margin-bottom: $spacing;
     }
     .actividad {
-        margin-top: $spacing*2;
+        margin-top: $spacing*4;
         .descripcion-actividad {
             h5 {
                 font-weight: 300;
                 font-size: 1rem;
+                font-style: italic;
+            }
+            p {
+                font-size: .9rem;
+                a {
+                    font-size: 1.2rem;
+                    color: white;
+                }
             }
         }
         .foto-info-actividad {
@@ -27,16 +35,24 @@
             }
             .foto-actividad {
                 padding-right: $spacing;
+                img {
+                    width: 30vw;
+                }
             }
             .info-actividad {
                 align-content: space-around;
                 div {
                     display: flex;
                     flex-direction: row;
+                    padding-top: $spacing;
                     padding-bottom: $spacing;
                     img {
-                        height: 30px;
+                        height: 28px;
                         margin-right: $spacing;
+                    }
+                    p {
+                        font-size: 1rem;
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -44,18 +60,36 @@
     } 
 }
 
-@media screen and (min-width:426px) {
+@media screen and (min-width:768px) {
     .section-agenda  {
         padding: $spacing*4;
         h4 {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
         .actividad {
             margin-top: $spacing*5;
             padding-left: $spacing*5;
             .descripcion-actividad {
                 h5 {
-                    font-size: 1.2rem;
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                }                
+            }
+            .foto-info-actividad {
+                .foto-actividad {
+                    img {
+                        width: 15vw;
+                    }
+                }
+                .info-actividad {
+                    div {
+                        img {
+                            height: 30px;
+                        }
+                        p {
+                            font-size: 1.5rem;
+                        }
+                    }
                 }
             }
         }

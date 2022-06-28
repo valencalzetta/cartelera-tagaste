@@ -6290,11 +6290,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px; }
+  padding: 20px; }
   footer a {
     color: #e7e5e5;
     font-size: .8rem;
     text-decoration: none; }
+    footer a:hover {
+      color: white; }
     footer a img {
       width: 30px; }
 
@@ -6354,10 +6356,16 @@ footer {
     text-align: center;
     margin-bottom: 10px; }
   .section-agenda .actividad {
-    margin-top: 20px; }
+    margin-top: 40px; }
     .section-agenda .actividad .descripcion-actividad h5 {
       font-weight: 300;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-style: italic; }
+    .section-agenda .actividad .descripcion-actividad p {
+      font-size: .9rem; }
+      .section-agenda .actividad .descripcion-actividad p a {
+        font-size: 1.2rem;
+        color: white; }
     .section-agenda .actividad .foto-info-actividad {
       display: flex;
       flex-direction: row;
@@ -6368,31 +6376,36 @@ footer {
         flex-direction: column; }
       .section-agenda .actividad .foto-info-actividad .foto-actividad {
         padding-right: 10px; }
+        .section-agenda .actividad .foto-info-actividad .foto-actividad img {
+          width: 30vw; }
       .section-agenda .actividad .foto-info-actividad .info-actividad {
         align-content: space-around; }
         .section-agenda .actividad .foto-info-actividad .info-actividad div {
           display: flex;
           flex-direction: row;
+          padding-top: 10px;
           padding-bottom: 10px; }
           .section-agenda .actividad .foto-info-actividad .info-actividad div img {
-            height: 30px;
+            height: 28px;
             margin-right: 10px; }
+          .section-agenda .actividad .foto-info-actividad .info-actividad div p {
+            font-size: 1rem;
+            margin-bottom: 0; }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
   .section-agenda {
     padding: 40px; }
     .section-agenda h4 {
-      font-size: 1.6rem; }
+      font-size: 1.8rem; }
     .section-agenda .actividad {
       margin-top: 50px;
       padding-left: 50px; }
       .section-agenda .actividad .descripcion-actividad h5 {
-        font-size: 1.2rem; } }
-
-.carousel {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  .carousel div div img {
-    height: 400px;
-    width: auto !important;
-    align-self: center; }
+        font-size: 1.7rem;
+        font-weight: 400; }
+      .section-agenda .actividad .foto-info-actividad .foto-actividad img {
+        width: 15vw; }
+      .section-agenda .actividad .foto-info-actividad .info-actividad div img {
+        height: 30px; }
+      .section-agenda .actividad .foto-info-actividad .info-actividad div p {
+        font-size: 1.5rem; } }
