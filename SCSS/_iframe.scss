@@ -1,0 +1,10 @@
+.iframe {
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing*5;
+    margin-bottom: $spacing*5;
+    iframe {
+        width: 80vw;
+        justify-self: center;
+    }
+}
